@@ -399,6 +399,7 @@
       <symbol id="i-building" viewBox="0 0 24 24"><path d="M3 21h18M6 21V4h12v17M9 8h2m2 0h2m-6 4h2m2 0h2m-6 4h2m2 0h2"/></symbol>
       <symbol id="i-truck" viewBox="0 0 24 24"><path d="M10 17h4V5H2v12h3m9-7h4l4 4v3h-3"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="16.5" cy="17.5" r="2.5"/></symbol>
       <symbol id="i-coins" viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></symbol>
+      <symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/><path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/></symbol>
       <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18M10 12v2h4v-2"/></symbol>
       <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 3h7v7M10 14 21 3M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></symbol>
       <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 2 9 5-9 5-9-5 9-5Z"/><path d="m3 12 9 5 9-5M3 17l9 5 9-5"/></symbol>
@@ -473,11 +474,15 @@
       },
       "estimado-sep-26": {
         label: "Estimado Sep-26",
-        links: { ...ENLACES_MODELOS }
+        links: Object.fromEntries(
+          Object.keys(ENLACES_MODELOS).map(id => [id, "https://toning.com.co/"])
+        )
       },
       "presupuesto-2027": {
         label: "Presupuesto 2027",
-        links: { ...ENLACES_MODELOS }
+        links: Object.fromEntries(
+          Object.keys(ENLACES_MODELOS).map(id => [id, "https://toning.exxiscloud.com/"])
+        )
       }
     };
 
@@ -547,10 +552,9 @@
           <div class="link-grid">
             ${section.items.map(item => `
               <a class="nav-card" data-link-id="${item.id}" href="#" target="_blank" rel="noopener noreferrer" aria-label="Abrir ${item.title}">
-                <span class="icon-box">${iconSvg(item.icon)}</span>
+                <span class="icon-box">${iconSvg("i-database")}</span>
                 <span class="card-copy">
                   <span class="card-title">${item.title}</span>
-                  <span class="card-action">Abrir modelo ${iconSvg("i-external")}</span>
                 </span>
               </a>
             `).join("")}

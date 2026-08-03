@@ -211,16 +211,10 @@
 
     .toolbar {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       gap: 16px;
       align-items: center;
       padding: 28px 4px 14px;
-    }
-
-    .toolbar-title {
-      margin: 0;
-      font-size: 18px;
-      letter-spacing: -.015em;
     }
 
     .active-version {
@@ -230,7 +224,7 @@
       padding: 8px 12px;
       border: 1px solid #3a5142;
       border-radius: 999px;
-      color: var(--verde-800);
+      color: #ffffff;
       background: var(--verde-050);
       font-size: 12px;
       font-weight: 700;
@@ -239,12 +233,12 @@
     .active-version svg { width: 15px; height: 15px; }
 
     .section {
-      margin-top: 16px;
-      padding: 25px;
-      border: 1px solid var(--linea);
-      border-radius: 20px;
-      background: var(--superficie);
-      box-shadow: var(--sombra);
+      margin-top: 22px;
+      padding: 0 4px 4px;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
     }
 
     .section-head {
@@ -271,7 +265,7 @@
       align-items: center;
       min-height: 94px;
       padding: 17px;
-      border: 1px solid #52745e;
+      border: 1px solid #3a3e3b;
       border-radius: 15px;
       color: var(--tinta);
       background: var(--superficie-2);
@@ -288,14 +282,14 @@
       height: 3px;
       background: var(--accent, var(--verde-800));
       content: "";
-      transform: scaleX(1);
+      transform: scaleX(0);
       transform-origin: left;
       transition: transform .18s ease;
     }
 
     .nav-card:hover,
     .nav-card:focus-visible {
-      border-color: var(--icono-verde);
+      border-color: #52745e;
       outline: none;
       box-shadow: 0 12px 25px rgba(22, 54, 41, .10);
       transform: translateY(-3px);
@@ -382,7 +376,7 @@
       .page { padding: 10px; }
       .hero { padding: 27px 20px; }
       .toolbar { align-items: flex-start; flex-direction: column; }
-      .section { padding: 19px 15px; border-radius: 17px; }
+      .section { padding: 0 0 4px; }
       .link-grid { grid-template-columns: 1fr; }
       .nav-card { min-height: 84px; }
     }
@@ -433,7 +427,6 @@
     </header>
 
     <div class="toolbar">
-      <h2 class="toolbar-title">Modelos financieros</h2>
       <span class="active-version" id="activeVersion">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><use href="#i-layers"/></svg>
         <span></span>

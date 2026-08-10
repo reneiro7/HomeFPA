@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <script type="text/javascript" src="https://me.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=ryfrZjgEnjvUHqDYAFoAmKbsjaznzPb0rgWEN6jcaL3S8h2OOuwts77BtuQMVWRY569h62qFfPWepa9px40tV7wMlTZ3ziYhk996Nali8BMeY6LXnXL5_0pa6OuVP6SwJKbeP7TcDojT3H7JOwu-j9stUhCCmIiibo3cGPjtzAQ_rvB4Uej-QMH8-Je4YvpxbdqKJsSuVUS2U31xeWajgg5n24GndRhQ85JMFlcN2au1wD5JQsvTuV4W3esuo6EW60BM5a6jcsJZ4kMZOpLduw" charset="UTF-8"></script><style>
+  <script type="text/javascript" src="https://me.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=SJ7rV2mNGYp7OwTSDi3REGlfpG_96BS3uApHeI9JvtzAja97qMfDvwgV0Hk7fz3Zc56l3D246ZvUEgocwLjqieOuJZ_deH7qesiPRJSpkXZktkAIUunnKpfn_a0TbzDX4dSWT0h_JpvNV_VhoiZOwXMJ1KzsjlLL_rOep9TgA0v3Gg6OAsbHsaI4grn0oz0zWaQ9Olbm-KTABXR8pAEzYbNjxOquiD8ZKRrUnSae5gvzo496rTCfFsLYC2XToorSeUObogL5DLLtyZqdx6V8ZQ" charset="UTF-8"></script><script type="text/javascript" src="https://me.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=ryfrZjgEnjvUHqDYAFoAmKbsjaznzPb0rgWEN6jcaL3S8h2OOuwts77BtuQMVWRY569h62qFfPWepa9px40tV7wMlTZ3ziYhk996Nali8BMeY6LXnXL5_0pa6OuVP6SwJKbeP7TcDojT3H7JOwu-j9stUhCCmIiibo3cGPjtzAQ_rvB4Uej-QMH8-Je4YvpxbdqKJsSuVUS2U31xeWajgg5n24GndRhQ85JMFlcN2au1wD5JQsvTuV4W3esuo6EW60BM5a6jcsJZ4kMZOpLduw" charset="UTF-8"></script><style>
     :root {
       --verde-950: #163629;
       --verde-900: #1d4634;
@@ -318,9 +318,11 @@
     .card-title {
       display: block;
       margin-bottom: 4px;
-      font-size: 13px;
-      font-weight: 750;
-      line-height: 1.3;
+      font-family: "Segoe UI", "Aptos", Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.25;
+      letter-spacing: -.01em;
     }
 
     .card-action {
@@ -411,7 +413,7 @@
       <div>
         <p class="eyebrow">Planeación financiera</p>
         <h1>Presupuesto y Estimado</h1>
-        <p class="hero-copy">Consulta las plantillas de cada periodo. Selecciona una versión para actualizar todos los accesos.</p>
+        <p class="hero-copy">Consulta las plantillas y modelos financieros correspondientes a cada ciclo. Selecciona una versión para actualizar todos los accesos.</p>
       </div>
 
       <div class="version-panel">
@@ -475,14 +477,17 @@
       "estimado-sep-26": {
         label: "Estimado Sep-26",
         links: Object.fromEntries(
-          Object.keys(ENLACES_MODELOS).map(id => [id, "https://toning.com.co/"])
+          Object.keys(ENLACES_MODELOS).map(id => [id, "#"])
         )
       },
       "presupuesto-2027": {
         label: "Presupuesto 2027",
-        links: Object.fromEntries(
-          Object.keys(ENLACES_MODELOS).map(id => [id, "https://toning.exxiscloud.com/"])
-        )
+        links: {
+          ...Object.fromEntries(
+            Object.keys(ENLACES_MODELOS).map(id => [id, "#"])
+          ),
+          ventas: "https://alimentostoning.sharepoint.com/:x:/s/presupuestoyreforecast/IQA-bcZEY0NwSrPR4x2NiUx2Ad1HHpDcH83uvO5oTt5akXI?e=O0u4jVb"
+        }
       }
     };
 

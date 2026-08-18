@@ -469,6 +469,22 @@
       estadosFinancieros: "https://alimentostoning.sharepoint.com/:x:/r/sites/presupuestoyreforecast/_layouts/15/Doc.aspx?sourcedoc=%7B269B3446-8DAB-429A-8705-933E6D3AC6B7%7D&file=PLANFIN-EEFF%202026%20V1.xlsx&action=default&mobileredirect=true"
     };
 
+    const ENLACES_PPTO = {
+      ventas: "https://alimentostoning.sharepoint.com/:x:/r/sites/presupuestoyreforecast/_layouts/15/Doc.aspx?sourcedoc=%7BF55380D3-4F97-4324-BBA4-5AA8BD2463C2%7D&file=Plantilla%20Ventas.xlsx&action=default&mobileredirect=true",
+      costos: "https://alimentostoning.sharepoint.com/:x:/r/sites/presupuestoyreforecast/_layouts/15/Doc.aspx?sourcedoc=%7BFE8C8E13-967A-49E1-8F9C-01352F241EB2%7D&file=Explosi%25u00f3n%20de%20Costos.xlsx&action=default&mobileredirect=true",
+      costosFijos: "https://alimentostoning.sharepoint.com/:x:/r/sites/presupuestoyreforecast/_layouts/15/Doc.aspx?sourcedoc=%7BF933FB2F-6D70-46EC-A116-4721046850C0%7D&file=Costos%20Fijos.xlsx&action=default&mobileredirect=true",
+      gastosAdministracion: "https://alimentostoning.sharepoint.com/:x:/r/sites/presupuestoyreforecast/_layouts/15/Doc.aspx?sourcedoc=%7B3525A027-F0D1-49BF-80E4-D6FA4EC4E971%7D&file=Gastos%20Fijos%20de%20Administraci%25u00f3n.xlsx&action=default&mobileredirect=true",
+      gastosVariablesVentas: "https://alimentostoning.sharepoint.com/:x:/r/sites/presupuestoyreforecast/_layouts/15/Doc.aspx?sourcedoc=%7B39729241-0E60-45E7-8680-502B64A7374A%7D&file=Gastos%20Variables%20de%20Ventas.xlsx&action=default&mobileredirect=true",
+      gastosFijosVentas: "https://alimentostoning.sharepoint.com/:x:/r/sites/presupuestoyreforecast/_layouts/15/Doc.aspx?sourcedoc=%7BAC241835-295F-4624-AD26-1C24D5B924FC%7D&file=Gastos%20Fijos%20de%20Ventas.xlsx&action=default&mobileredirect=true",
+      gastosTransversales: "https://alimentostoning.sharepoint.com/:x:/r/sites/presupuestoyreforecast/_layouts/15/Doc.aspx?sourcedoc=%7B56682770-D5E9-43CF-A13F-A28E75CA6F5D%7D&file=Gastos%20Transversales.xlsx&action=default&mobileredirect=true",
+      inversionConsumidor: "https://alimentostoning.sharepoint.com/:x:/r/sites/presupuestoyreforecast/_layouts/15/Doc.aspx?sourcedoc=%7B5191BD48-DB87-4915-9654-2D083DD1D7F3%7D&file=Inversi%25u00f3n%20al%20Consumidor.xlsx&action=default&mobileredirect=true",
+      compras: "https://alimentostoning.sharepoint.com/:x:/r/sites/presupuestoyreforecast/_layouts/15/Doc.aspx?sourcedoc=%7B0444BDCC-EBAD-48A4-9299-8C3C285F694F%7D&file=Plantilla%20Compras.xlsx&action=default&mobileredirect=true",
+      inversionCliente: "https://alimentostoning.sharepoint.com/:x:/r/sites/presupuestoyreforecast/_layouts/15/Doc.aspx?sourcedoc=%7B2375DF2E-1539-486E-A345-C4E1F22C1F39%7D&file=Plantilla%20Inversi%25u00f3n%20al%20Cliente.xlsx&action=default&mobileredirect=true",
+      nomina: "https://alimentostoning.sharepoint.com/:x:/r/sites/presupuestoyreforecast/_layouts/15/Doc.aspx?sourcedoc=%7B95DC59F4-416E-421C-8051-E72FAED07DF4%7D&file=Plantilla%20Head%20Count.xlsx&action=default&mobileredirect=true",
+      fletes: "https://alimentostoning.sharepoint.com/:x:/r/sites/presupuestoyreforecast/_layouts/15/Doc.aspx?sourcedoc=%7B5FC2E2E5-2206-4811-B442-95D04D1015CE%7D&file=Plantilla%20Fletes%20Final.xlsx&action=default&mobileredirect=true",
+      estadosFinancieros: "https://alimentostoning.sharepoint.com/:x:/r/sites/presupuestoyreforecast/_layouts/15/Doc.aspx?sourcedoc=%7B269B3446-8DAB-429A-8705-933E6D3AC6B7%7D&file=PLANFIN-EEFF%202026%20V1.xlsx&action=default&mobileredirect=true"
+    };
+
     const VERSIONES = {
       "estimado-jun-26": {
         label: "Estimado Jun-26",
@@ -486,7 +502,26 @@
           ...Object.fromEntries(
             Object.keys(ENLACES_MODELOS).map(id => [id, "#"])
           ),
-          ventas: "https://alimentostoning.sharepoint.com/:x:/s/presupuestoyreforecast/IQA-bcZEY0NwSrPR4x2NiUx2Ad1HHpDcH83uvO5oTt5akXI?e=O0u4jVb"
+          ventas: "https://alimentostoning.sharepoint.com/:x:/s/presupuestoyreforecast/IQCAL5hdZNGmQbIwFo-ZwXX_ARugM8tCHwa5paIXhDI6WPI?e=SGISQc",
+          costosFijos: "https://alimentostoning.sharepoint.com/:x:/s/presupuestoyreforecast/IQARr3z786AqT62OEDaCUudKAdjoULjyf8ENm9XXycULnRE?e=p4sGtF",
+          gastosAdministracion: "https://alimentostoning.sharepoint.com/:x:/s/presupuestoyreforecast/IQCdUXLT7tNNQ4-e5xtClNsjAXclsuFcBpXfhBhbUpETGrQ?e=oXYEFO",
+          gastosFijosVentas: "https://alimentostoning.sharepoint.com/:x:/s/presupuestoyreforecast/IQADyWUaCNtlQo7BD1m-7_fsAaGsPIWDEfKpwXdx3qLa4cE?e=lthXPw",
+          gastosTransversales: "https://alimentostoning.sharepoint.com/:x:/s/presupuestoyreforecast/IQD70GCPhKekS4PaWXF_NrR8Aa7j8QCROeLgNNc2FernGRU?e=fYjrCt",
+          inversionConsumidor: "https://alimentostoning.sharepoint.com/:x:/s/presupuestoyreforecast/IQDCs6AJ6kRNRajJDFZEq_UdAVymTgG61vpn3FVoHDUmXJ0?e=RAOVDo"        }
+      },
+        "Comodin": {
+        label: "Presupuesto 2027",
+        links: {
+          ...Object.fromEntries(
+            Object.keys(ENLACES_MODELOS).map(id => [id, "#"])
+          ),
+          ventas: "https://alimentostoning.sharepoint.com/:x:/s/presupuestoyreforecast/IQCAL5hdZNGmQbIwFo-ZwXX_ARugM8tCHwa5paIXhDI6WPI?e=SGISQc",
+          costosFijos: "https://alimentostoning.sharepoint.com/:x:/s/presupuestoyreforecast/IQARr3z786AqT62OEDaCUudKAdjoULjyf8ENm9XXycULnRE?e=p4sGtF",
+          gastosAdministracion: "https://alimentostoning.sharepoint.com/:x:/s/presupuestoyreforecast/IQCdUXLT7tNNQ4-e5xtClNsjAXclsuFcBpXfhBhbUpETGrQ?e=oXYEFO",
+          gastosFijosVentas: "https://alimentostoning.sharepoint.com/:x:/s/presupuestoyreforecast/IQADyWUaCNtlQo7BD1m-7_fsAaGsPIWDEfKpwXdx3qLa4cE?e=lthXPw",
+          gastosTransversales: "https://alimentostoning.sharepoint.com/:x:/s/presupuestoyreforecast/IQD70GCPhKekS4PaWXF_NrR8Aa7j8QCROeLgNNc2FernGRU?e=fYjrCt",
+          inversionConsumidor: "https://alimentostoning.sharepoint.com/:x:/s/presupuestoyreforecast/IQDCs6AJ6kRNRajJDFZEq_UdAVymTgG61vpn3FVoHDUmXJ0?e=RAOVDo"
+          
         }
       }
     };
